@@ -237,6 +237,42 @@
             document.getElementById('start-btn').addEventListener('click', startQuiz);
             document.getElementById('next-btn').addEventListener('click', nextQuestion);
             document.getElementById('restart-btn').addEventListener('click', restartQuiz);
+
+            // Add email sharing functionality
+            document.getElementById('share-btn').addEventListener('click', function() {
+                const email = document.getElementById('share-email').value;
+                const result = {
+                    title: document.getElementById('result-title').textContent,
+                    description: document.getElementById('result-description').textContent
+                };
+
+                if (!email) {
+                    alert('Por favor, digite um email válido');
+                    return;
+                }
+
+                fetch('send_email.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `email=${encodeURIComponent(email)}&result=${encodeURIComponent(JSON.stringify(result))}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Email enviado com sucesso!');
+                        document.getElementById('share-email').value = '';
+                    } else {
+                        alert('Erro ao enviar email: ' + (data.debug || data.message));
+                        console.error('Email Error:', data);
+                    }
+                })
+                .catch(error => {
+                    alert('Erro ao enviar email. Por favor, tente novamente.');
+                    console.error('Error:', error);
+                });
+            });
         });
     </script>
     <style>
@@ -440,6 +476,48 @@
             transform: translateX(-50%);
             z-index: 1;
         }
+
+        .email-share {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .email-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: #0284c7;
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.1);
+        }
+
+        .share-btn {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(2, 132, 199, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -474,6 +552,10 @@
             <div class="icon">✓</div>
             <h2 class="result-title" id="result-title"></h2>
             <p class="result-description" id="result-description"></p>
+            <div class="email-share">
+                <input type="email" id="share-email" placeholder="Digite seu email para receber o resultado" class="email-input">
+                <button class="share-btn" id="share-btn">Compartilhar por Email</button>
+            </div>
             <button class="restart-btn" id="restart-btn">Refazer Avaliação</button>
         </div>
     </div>

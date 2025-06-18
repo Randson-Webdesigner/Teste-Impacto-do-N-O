@@ -1,0 +1,159 @@
+2025-06-18 14:07:44 - Script started
+2025-06-18 14:10:26 - Script started
+2025-06-18 14:14:06 - Script started
+2025-06-18 14:14:06 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:14:06 - ERROR: PHP Error: Call to undefined method PHPMailer\PHPMailer\PHPMailer::isHTML()
+2025-06-18 14:14:06 - ERROR: Stack trace: #0 {main}
+2025-06-18 14:15:55 - Script started
+2025-06-18 14:15:55 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:15:55 - ERROR: PHP Error: Class "PHPMailer\PHPMailer\PHPMailer\PHPMailer\PHPMailer" not found
+2025-06-18 14:15:55 - ERROR: Stack trace: #0 {main}
+2025-06-18 14:17:30 - Script started
+2025-06-18 14:17:30 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:17:30 - ERROR: Attempting to send email
+2025-06-18 14:17:31 - ERROR: Exception: Failed to send email
+2025-06-18 14:17:31 - ERROR: Stack trace: #0 {main}
+2025-06-18 14:19:14 - Script started
+2025-06-18 14:19:14 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:19:14 - ERROR: Attempting to send email
+2025-06-18 14:19:14 - Debug: Connecting to smtp.titan.email:587
+2025-06-18 14:19:15 - Debug: SMTP Response: 220 smtp-out.flockmail.com ESMTP Postfix
+2025-06-18 14:19:15 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:19:15 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:19:15 - Debug: Starting TLS
+2025-06-18 14:19:15 - Debug: SMTP Command: STARTTLS
+2025-06-18 14:19:15 - Debug: SMTP Response: 220 2.0.0 Ready to start TLS
+2025-06-18 14:19:16 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:19:16 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:19:16 - Debug: Authenticating
+2025-06-18 14:19:16 - Debug: SMTP Command: AUTH LOGIN
+2025-06-18 14:19:16 - Debug: SMTP Response: 334 VXNlcm5hbWU6
+2025-06-18 14:19:16 - Debug: SMTP Command: Y29udGF0b0ByYWRhcmRvcmguY29tLmJy
+2025-06-18 14:19:16 - Debug: SMTP Response: 334 UGFzc3dvcmQ6
+2025-06-18 14:19:16 - Debug: SMTP Command: QFRhbGVudHVzMjAyNQ==
+2025-06-18 14:19:16 - Debug: SMTP Response: 235 2.7.0 Authentication successful
+2025-06-18 14:19:16 - Debug: SMTP Command: MAIL FROM:<contato@radardorh.com.br>
+2025-06-18 14:19:16 - Debug: SMTP Response: 250 2.1.0 Ok
+2025-06-18 14:19:16 - Debug: SMTP Command: RCPT TO:<suporte.randson@gmail.com>
+2025-06-18 14:19:16 - Debug: SMTP Response: 250 2.1.5 Ok
+2025-06-18 14:19:16 - Debug: SMTP Command: DATA
+2025-06-18 14:19:16 - Debug: SMTP Response: 354 End data with <CR><LF>.<CR><LF>
+2025-06-18 14:19:16 - Debug: SMTP Command: 
+2025-06-18 14:19:17 - Debug: SMTP Response: 250 2.0.0 Ok: queued as 00C52E0338
+2025-06-18 14:19:17 - Debug: Disconnecting
+2025-06-18 14:19:17 - ERROR: Email sent successfully
+2025-06-18 14:32:24 - Script started
+2025-06-18 14:32:24 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:32:24 - ERROR: Attempting to send email
+2025-06-18 14:32:24 - Debug: Connecting to smtp.titan.email:587
+2025-06-18 14:32:24 - Debug: SMTP Response: 220 smtp-out.flockmail.com ESMTP Postfix
+2025-06-18 14:32:24 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:32:24 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:32:24 - Debug: Starting TLS
+2025-06-18 14:32:24 - Debug: SMTP Command: STARTTLS
+2025-06-18 14:32:24 - Debug: SMTP Response: 220 2.0.0 Ready to start TLS
+2025-06-18 14:32:25 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:32:25 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:32:25 - Debug: Authenticating
+2025-06-18 14:32:25 - Debug: SMTP Command: AUTH LOGIN
+2025-06-18 14:32:25 - Debug: SMTP Response: 334 VXNlcm5hbWU6
+2025-06-18 14:32:25 - Debug: SMTP Command: Y29udGF0b0ByYWRhcmRvcmguY29tLmJy
+2025-06-18 14:32:25 - Debug: SMTP Response: 334 UGFzc3dvcmQ6
+2025-06-18 14:32:25 - Debug: SMTP Command: QFRhbGVudHVzMjAyNQ==
+2025-06-18 14:32:25 - Debug: SMTP Response: 235 2.7.0 Authentication successful
+2025-06-18 14:32:25 - Debug: SMTP Command: MAIL FROM:<contato@radardorh.com.br>
+2025-06-18 14:32:25 - Debug: SMTP Response: 250 2.1.0 Ok
+2025-06-18 14:32:25 - Debug: SMTP Command: RCPT TO:<suporte.randson@gmail.com>
+2025-06-18 14:32:25 - Debug: SMTP Response: 250 2.1.5 Ok
+2025-06-18 14:32:25 - Debug: SMTP Command: DATA
+2025-06-18 14:32:26 - Debug: SMTP Response: 354 End data with <CR><LF>.<CR><LF>
+2025-06-18 14:32:26 - Debug: SMTP Command: 
+2025-06-18 14:32:26 - Debug: SMTP Response: 250 2.0.0 Ok: queued as 3B9C314042D
+2025-06-18 14:32:26 - Debug: Disconnecting
+2025-06-18 14:32:26 - ERROR: Email sent successfully
+2025-06-18 14:44:57 - Script started
+2025-06-18 14:44:57 - ERROR: Received request for email: suporte.randson@gmail.com
+2025-06-18 14:44:57 - ERROR: Attempting to send email
+2025-06-18 14:44:57 - Debug: Connecting to smtp.titan.email:587
+2025-06-18 14:44:57 - Debug: SMTP Response: 220 smtp-out.flockmail.com ESMTP Postfix
+2025-06-18 14:44:57 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:44:58 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:44:58 - Debug: Starting TLS
+2025-06-18 14:44:58 - Debug: SMTP Command: STARTTLS
+2025-06-18 14:44:58 - Debug: SMTP Response: 220 2.0.0 Ready to start TLS
+2025-06-18 14:44:58 - Debug: SMTP Command: EHLO localhost
+2025-06-18 14:44:58 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250 CHUNKING
+2025-06-18 14:44:58 - Debug: Authenticating
+2025-06-18 14:44:58 - Debug: SMTP Command: AUTH LOGIN
+2025-06-18 14:44:58 - Debug: SMTP Response: 334 VXNlcm5hbWU6
+2025-06-18 14:44:58 - Debug: SMTP Command: Y29udGF0b0ByYWRhcmRvcmguY29tLmJy
+2025-06-18 14:44:58 - Debug: SMTP Response: 334 UGFzc3dvcmQ6
+2025-06-18 14:44:58 - Debug: SMTP Command: QFRhbGVudHVzMjAyNQ==
+2025-06-18 14:44:59 - Debug: SMTP Response: 235 2.7.0 Authentication successful
+2025-06-18 14:44:59 - Debug: SMTP Command: MAIL FROM:<contato@radardorh.com.br>
+2025-06-18 14:44:59 - Debug: SMTP Response: 250 2.1.0 Ok
+2025-06-18 14:44:59 - Debug: SMTP Command: RCPT TO:<suporte.randson@gmail.com>
+2025-06-18 14:44:59 - Debug: SMTP Response: 250 2.1.5 Ok
+2025-06-18 14:44:59 - Debug: SMTP Command: DATA
+2025-06-18 14:44:59 - Debug: SMTP Response: 354 End data with <CR><LF>.<CR><LF>
+2025-06-18 14:44:59 - Debug: SMTP Command: 
+2025-06-18 14:44:59 - Debug: SMTP Response: 250 2.0.0 Ok: queued as D19336013E
+2025-06-18 14:44:59 - Debug: Disconnecting
+2025-06-18 14:44:59 - ERROR: Email sent successfully
