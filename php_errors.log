@@ -1,2 +1,4 @@
 [18-Jun-2025 14:32:24 Europe/Berlin] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$AltBody is deprecated in C:\xampp\htdocs\não\send_email.php on line 148
 [18-Jun-2025 14:44:57 Europe/Berlin] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$AltBody is deprecated in C:\xampp\htdocs\não\send_email.php on line 150
+[28-Apr-2026 12:56:47 Europe/Berlin] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$AltBody is deprecated in C:\xampp\htdocs\Teste-Impacto-do-N-O\send_email.php on line 187
+[28-Apr-2026 13:06:45 Europe/Berlin] PHP Deprecated:  Creation of dynamic property PHPMailer\PHPMailer\PHPMailer::$AltBody is deprecated in C:\xampp\htdocs\Teste-Impacto-do-N-O\send_email.php on line 187

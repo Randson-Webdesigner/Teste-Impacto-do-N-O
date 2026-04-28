@@ -157,3 +157,81 @@
 2025-06-18 14:44:59 - Debug: SMTP Response: 250 2.0.0 Ok: queued as D19336013E
 2025-06-18 14:44:59 - Debug: Disconnecting
 2025-06-18 14:44:59 - ERROR: Email sent successfully
+2026-04-28 12:56:47 - Script started
+2026-04-28 12:56:47 - ERROR: Received request for email: suporte.randson@gmail.com
+2026-04-28 12:56:47 - ERROR: Attempting to send email
+2026-04-28 12:56:47 - Debug: Connecting to smtp.titan.email:587
+2026-04-28 12:56:47 - Debug: SMTP Response: 220 smtp-out.flockmail.com ESMTP Postfix
+2026-04-28 12:56:47 - Debug: SMTP Command: EHLO localhost
+2026-04-28 12:56:48 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 CHUNKING
+2026-04-28 12:56:48 - Debug: Starting TLS
+2026-04-28 12:56:48 - Debug: SMTP Command: STARTTLS
+2026-04-28 12:56:48 - Debug: SMTP Response: 220 2.0.0 Ready to start TLS
+2026-04-28 12:56:49 - Debug: SMTP Command: EHLO localhost
+2026-04-28 12:56:49 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 CHUNKING
+2026-04-28 12:56:49 - Debug: Authenticating
+2026-04-28 12:56:49 - Debug: SMTP Command: AUTH LOGIN
+2026-04-28 12:56:49 - Debug: SMTP Response: 334 VXNlcm5hbWU6
+2026-04-28 12:56:49 - Debug: SMTP Command: Y29udGF0b0ByYWRhcmRvcmguY29tLmJy
+2026-04-28 12:56:49 - Debug: SMTP Response: 334 UGFzc3dvcmQ6
+2026-04-28 12:56:49 - Debug: SMTP Command: QFRhbGVudHVzMjAyNQ==
+2026-04-28 12:56:51 - Debug: SMTP Response: 535 5.7.8 Error: authentication failed: UGFzc3dvcmQ6
+2026-04-28 12:56:51 - Debug: Disconnecting
+2026-04-28 12:56:51 - ERROR: Exception: Failed to send email
+2026-04-28 12:56:51 - ERROR: Stack trace: #0 {main}
+2026-04-28 13:06:45 - Script started
+2026-04-28 13:06:45 - ERROR: Received request for email: suporte.randson@gmail.com
+2026-04-28 13:06:45 - ERROR: Attempting to send email
+2026-04-28 13:06:45 - Debug: Connecting to smtp.titan.email:587
+2026-04-28 13:06:45 - Debug: SMTP Response: 220 smtp-out.flockmail.com ESMTP Postfix
+2026-04-28 13:06:45 - Debug: SMTP Command: EHLO localhost
+2026-04-28 13:06:45 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 CHUNKING
+2026-04-28 13:06:45 - Debug: Starting TLS
+2026-04-28 13:06:45 - Debug: SMTP Command: STARTTLS
+2026-04-28 13:06:45 - Debug: SMTP Response: 220 2.0.0 Ready to start TLS
+2026-04-28 13:06:47 - Debug: SMTP Command: EHLO localhost
+2026-04-28 13:06:47 - Debug: SMTP Response: 250-smtp-out.flockmail.com
+250-PIPELINING
+250-SIZE 52428800
+250-VRFY
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250 CHUNKING
+2026-04-28 13:06:47 - Debug: Authenticating
+2026-04-28 13:06:47 - Debug: SMTP Command: AUTH LOGIN
+2026-04-28 13:06:47 - Debug: SMTP Response: 334 VXNlcm5hbWU6
+2026-04-28 13:06:47 - Debug: SMTP Command: Y29udGF0b0ByYWRhcmRvcmguY29tLmJy
+2026-04-28 13:06:47 - Debug: SMTP Response: 334 UGFzc3dvcmQ6
+2026-04-28 13:06:47 - Debug: SMTP Command: QFRhbGVudHVzMjAyNQ==
+2026-04-28 13:06:49 - Debug: SMTP Response: 535 5.7.8 Error: authentication failed: UGFzc3dvcmQ6
+2026-04-28 13:06:49 - Debug: Disconnecting
+2026-04-28 13:06:49 - ERROR: Exception: Failed to send email
+2026-04-28 13:06:49 - ERROR: Stack trace: #0 {main}

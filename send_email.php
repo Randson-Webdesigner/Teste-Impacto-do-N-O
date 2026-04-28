@@ -91,56 +91,93 @@ try {
         <head>
             <style>
                 body {
-                    font-family: Arial, sans-serif;
+                    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     line-height: 1.6;
-                    color: #333;
+                    color: #f8fafc;
+                    background-color: #0a0f1c;
+                    margin: 0;
+                    padding: 40px 20px;
+                }
+                .container {
                     max-width: 600px;
                     margin: 0 auto;
-                    padding: 20px;
+                    background-color: #141a2b;
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
                 }
                 .header {
-                    background-color: #0284c7;
+                    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
                     color: white;
-                    padding: 20px;
+                    padding: 30px;
                     text-align: center;
-                    border-radius: 5px 5px 0 0;
+                }
+                .header h1 {
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
                 }
                 .content {
-                    background-color: #f8fafc;
-                    padding: 20px;
-                    border: 1px solid #e2e8f0;
-                    border-radius: 0 0 5px 5px;
+                    padding: 40px 30px;
+                    text-align: center;
                 }
                 .title {
-                    color: #0f172a;
-                    font-size: 24px;
-                    margin-bottom: 15px;
+                    color: #3b82f6;
+                    font-size: 22px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
                 }
                 .description {
-                    color: #475569;
+                    color: #cbd5e1;
                     font-size: 16px;
-                    margin-bottom: 20px;
+                    line-height: 1.8;
+                    margin-bottom: 30px;
+                    text-align: left;
+                    background: rgba(30, 41, 59, 0.5);
+                    padding: 20px;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.05);
                 }
                 .footer {
                     text-align: center;
-                    margin-top: 20px;
+                    padding: 20px;
                     color: #64748b;
                     font-size: 14px;
+                    background-color: #0f172a;
+                    border-top: 1px solid rgba(255, 255, 255, 0.05);
+                }
+                .btn {
+                    display: inline-block;
+                    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 14px 30px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    margin-top: 20px;
                 }
             </style>
         </head>
         <body>
-            <div class='header'>
-                <h1>Seu Resultado do Teste de Impacto do Não</h1>
-            </div>
-            <div class='content'>
-                <div class='title'>{$resultData['title']}</div>
-                <div class='description'>{$resultData['description']}</div>
-            </div>
-            <div class='footer'>
-                Obrigado por participar do nosso quiz!<br>
-                Atenciosamente,<br>
-                Radar do RH - Visite o nosso site: www.radardorh.com.br
+            <div class='container'>
+                <div class='header'>
+                    <h1>Resultado: Teste de Impacto do NÃO</h1>
+                </div>
+                <div class='content'>
+                    <div class='title'>{$resultData['title']}</div>
+                    <div class='description'>{$resultData['description']}</div>
+                    
+                    <p style='color: #94a3b8; font-size: 15px;'>
+                        Esperamos que esta avaliação tenha trazido bons insights para o seu desenvolvimento pessoal e profissional.
+                    </p>
+                    <a href='https://www.radardorh.com.br' class='btn'>Acessar Radar do RH</a>
+                </div>
+                <div class='footer'>
+                    Obrigado por participar do nosso quiz!<br><br>
+                    Radar do RH &copy; " . date('Y') . "
+                </div>
             </div>
         </body>
         </html>
